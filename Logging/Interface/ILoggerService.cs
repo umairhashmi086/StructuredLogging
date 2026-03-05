@@ -13,7 +13,7 @@ public interface ILoggerService
     Task Error(
          Exception e,
          string url,
-         string? kongRequestId,
+         string? requestId,
          string? serviceOrigin = null);
 
     Task Info(RequestLogDetails logDetails);
